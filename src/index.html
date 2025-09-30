@@ -259,6 +259,36 @@
       document.getElementById("crossBtn").style.display = "none"
       document.getElementById("popup").style.display = "none"
     }
+
+
+     window.addEventListener("resize", () => {
+            if (window.innerWidth >= 960) { 
+                document.getElementById("popup").style.display = "none"
+                document.getElementById("menuBtn").style.display = "none"
+                document.getElementById("crossBtn").style.display = "none"
+            }
+
+            if(window.innerWidth < 960){
+                if( document.getElementById("popup").style.display === "block"){
+                    document.getElementById("menuBtn").style.display = "none"
+                }
+                else{
+                    document.getElementById("menuBtn").style.display = "block"
+                    
+                }
+            }
+        });
+
+
+
+
+
+        // Grab all links inside the popup
+  document.querySelectorAll(" a").forEach(link => {
+    link.addEventListener("click", () => {
+      closePopup();  // call your existing closePopup function
+    });
+  });
     
   </script>
 
