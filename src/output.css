@@ -1486,6 +1486,11 @@
       min-width: calc(var(--spacing) * 134);
     }
   }
+  .lg\:min-w-135 {
+    @media (width >= 1143px) {
+      min-width: calc(var(--spacing) * 135);
+    }
+  }
   .lg\:min-w-136 {
     @media (width >= 1143px) {
       min-width: calc(var(--spacing) * 136);
