@@ -271,11 +271,17 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
   }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
   }
   .block {
     display: block;
@@ -319,8 +325,20 @@
   .max-h-11 {
     max-height: calc(var(--spacing) * 11);
   }
+  .max-h-90 {
+    max-height: calc(var(--spacing) * 90);
+  }
+  .max-h-100 {
+    max-height: calc(var(--spacing) * 100);
+  }
   .min-h-11 {
     min-height: calc(var(--spacing) * 11);
+  }
+  .min-h-90 {
+    min-height: calc(var(--spacing) * 90);
+  }
+  .min-h-100 {
+    min-height: calc(var(--spacing) * 100);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -466,6 +484,9 @@
   .min-w-92 {
     min-width: calc(var(--spacing) * 92);
   }
+  .min-w-96 {
+    min-width: calc(var(--spacing) * 96);
+  }
   .min-w-100 {
     min-width: calc(var(--spacing) * 100);
   }
@@ -562,11 +583,23 @@
   .gap-y-0 {
     row-gap: calc(var(--spacing) * 0);
   }
+  .gap-y-4 {
+    row-gap: calc(var(--spacing) * 4);
+  }
   .gap-y-5 {
     row-gap: calc(var(--spacing) * 5);
   }
   .gap-y-6 {
     row-gap: calc(var(--spacing) * 6);
+  }
+  .gap-y-8 {
+    row-gap: calc(var(--spacing) * 8);
+  }
+  .gap-y-10 {
+    row-gap: calc(var(--spacing) * 10);
+  }
+  .gap-y-12 {
+    row-gap: calc(var(--spacing) * 12);
   }
   .gap-y-\[-20px\] {
     row-gap: -20px;
@@ -610,6 +643,9 @@
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
+  .border-r-black {
+    border-right-color: var(--color-black);
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -622,8 +658,14 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
@@ -657,6 +699,9 @@
   }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -922,6 +967,16 @@
       max-width: calc(var(--spacing) * 100);
     }
   }
+  .xs\:max-w-104 {
+    @media (width >= 540px) {
+      max-width: calc(var(--spacing) * 104);
+    }
+  }
+  .xs\:max-w-106 {
+    @media (width >= 540px) {
+      max-width: calc(var(--spacing) * 106);
+    }
+  }
   .xs\:max-w-110 {
     @media (width >= 540px) {
       max-width: calc(var(--spacing) * 110);
@@ -940,6 +995,11 @@
   .xs\:max-w-116 {
     @media (width >= 540px) {
       max-width: calc(var(--spacing) * 116);
+    }
+  }
+  .xs\:max-w-120 {
+    @media (width >= 540px) {
+      max-width: calc(var(--spacing) * 120);
     }
   }
   .xs\:max-w-124 {
@@ -1101,9 +1161,19 @@
       width: calc(var(--spacing) * 34);
     }
   }
+  .sm\:w-60 {
+    @media (width >= 720px) {
+      width: calc(var(--spacing) * 60);
+    }
+  }
   .sm\:w-69\.5 {
     @media (width >= 720px) {
       width: calc(var(--spacing) * 69.5);
+    }
+  }
+  .sm\:w-70 {
+    @media (width >= 720px) {
+      width: calc(var(--spacing) * 70);
     }
   }
   .sm\:w-79 {
@@ -1116,9 +1186,29 @@
       width: calc(var(--spacing) * 168);
     }
   }
+  .sm\:max-w-70 {
+    @media (width >= 720px) {
+      max-width: calc(var(--spacing) * 70);
+    }
+  }
+  .sm\:max-w-80 {
+    @media (width >= 720px) {
+      max-width: calc(var(--spacing) * 80);
+    }
+  }
   .sm\:max-w-100 {
     @media (width >= 720px) {
       max-width: calc(var(--spacing) * 100);
+    }
+  }
+  .sm\:min-w-60 {
+    @media (width >= 720px) {
+      min-width: calc(var(--spacing) * 60);
+    }
+  }
+  .sm\:min-w-80 {
+    @media (width >= 720px) {
+      min-width: calc(var(--spacing) * 80);
     }
   }
   .sm\:min-w-138 {
@@ -1191,6 +1281,11 @@
   .sm\:text-\[21px\] {
     @media (width >= 720px) {
       font-size: 21px;
+    }
+  }
+  .sm\:text-amber-700 {
+    @media (width >= 720px) {
+      color: var(--color-amber-700);
     }
   }
   .md\:col-start-1 {
