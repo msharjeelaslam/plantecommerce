@@ -208,6 +208,12 @@
   .relative {
     position: relative;
   }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
   .mx-15 {
     margin-inline: calc(var(--spacing) * 15);
   }
@@ -1187,6 +1193,21 @@
       font-size: 21px;
     }
   }
+  .md\:col-start-1 {
+    @media (width >= 960px) {
+      grid-column-start: 1;
+    }
+  }
+  .md\:col-start-2 {
+    @media (width >= 960px) {
+      grid-column-start: 2;
+    }
+  }
+  .md\:row-start-1 {
+    @media (width >= 960px) {
+      grid-row-start: 1;
+    }
+  }
   .md\:mx-auto {
     @media (width >= 960px) {
       margin-inline: auto;
@@ -1200,6 +1221,11 @@
   .md\:mt-2 {
     @media (width >= 960px) {
       margin-top: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:ml-10 {
+    @media (width >= 960px) {
+      margin-left: calc(var(--spacing) * 10);
     }
   }
   .md\:ml-36 {
@@ -1343,6 +1369,30 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .md\:translate-x-8 {
+    @media (width >= 960px) {
+      --tw-translate-x: calc(var(--spacing) * 8);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .md\:translate-x-10 {
+    @media (width >= 960px) {
+      --tw-translate-x: calc(var(--spacing) * 10);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .md\:translate-x-12 {
+    @media (width >= 960px) {
+      --tw-translate-x: calc(var(--spacing) * 12);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .md\:translate-x-14 {
+    @media (width >= 960px) {
+      --tw-translate-x: calc(var(--spacing) * 14);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .md\:translate-x-53 {
     @media (width >= 960px) {
       --tw-translate-x: calc(var(--spacing) * 53);
@@ -1451,6 +1501,11 @@
       max-width: calc(var(--spacing) * 82);
     }
   }
+  .lg\:max-w-124 {
+    @media (width >= 1143px) {
+      max-width: calc(var(--spacing) * 124);
+    }
+  }
   .lg\:max-w-130 {
     @media (width >= 1143px) {
       max-width: calc(var(--spacing) * 130);
@@ -1501,6 +1556,12 @@
       min-width: calc(var(--spacing) * 280);
     }
   }
+  .lg\:translate-x-10 {
+    @media (width >= 1143px) {
+      --tw-translate-x: calc(var(--spacing) * 10);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .lg\:translate-x-76 {
     @media (width >= 1143px) {
       --tw-translate-x: calc(var(--spacing) * 76);
@@ -1525,6 +1586,11 @@
   .lg\:gap-x-4 {
     @media (width >= 1143px) {
       column-gap: calc(var(--spacing) * 4);
+    }
+  }
+  .lg\:gap-x-6 {
+    @media (width >= 1143px) {
+      column-gap: calc(var(--spacing) * 6);
     }
   }
   .lg\:gap-x-8 {
